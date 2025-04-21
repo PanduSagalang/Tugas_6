@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Layout</title>
+    <style>
+        .conatiner{
+            background-color: lightblue;
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "menu main right"
+            "menu footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 5px;
+            padding: 10px;
+            border: solid blue;
+        }
+        div{
+            text-align: center;
+            background-color: lightblue;
+            font-size: 28px;
+            padding: 20px;
+            background-color: #d6ebff ;
+            border: 1px solid blue;
+        }
+        .header{
+            grid-area: header;
+        }
+        .menu{
+            grid-area: menu;
+        }
+        .main{
+            grid-area: main;
+        }
+        .right{
+            grid-area: right;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Mainr</div>
+        <div class="right">Right</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

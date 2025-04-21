@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wadah_flex{
+            display: flex;
+            background-color: gold;
+            /*flex-direction: row;*/
+            /*flex-wrap: nowrap;*/
+            flex-flow: row-reverse wrap;
+            justify-content: start;
+        }
+        .wadah_flex > div{
+            background-color: #ae21ae;
+            margin: 10px;
+            padding: 5px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>Kesimpulan skenario 1 adalah dengan kita menambahkan display flex layout
+        angka yang seharunya kebawah jadi kesamping
+    </p>
+    <p>
+        Kesimpulan skenario ke 2 adalah kita menambahkan css pada div
+        anak kelas wadah_flex bg akan berubah menyesuaikan dan
+        diikuti margin padding font-size
+    </p>
+    <p>Kesimpulan skenario 3 adalah dengan menambahkan flex direction kita bisa mengatur
+        isi dari wadah flex seperti column elemen div tersebut akan bertambah panjang
+        dan row tidak akan terjadi apa-apa tetapi jika row dan column dikasih reverse belakangnya maka
+        angka akan terbalik
+    </p>
+
+<p>Kesimpulan skenario 4 adalah dengan kita menambahkan flex-wrap wrap
+    pada saat mengecilkan dimensi elemen akan ikut kebwahnya sedangkan jika помгар
+    elemen akan tetap berada disamping tidak dibawah
+</p>
+<p>Kesimpulan skenario 5 adalah dengan kita menggabungkan beberapa flex kita dapat mengombinasikan
+isi dari flex tersebut meskipun mungkin ada beberapa yang tidak bekerja karena tertimpa css yang lain
+</p>
+<p>Kesimpulan skenario 6 adalah dengan kita menambahkan justify-content kita dapat mengatur posisi dari isi elemen di
+    dalam class wadah-flex seperti menempatkannya ditengah di samping kanan atau kiri
+</p>
+</body>
+</html>
